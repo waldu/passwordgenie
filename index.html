@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+<body>
+    <div class="container">
+        <h1>Password Genie</h1>
+        <p>The Memorable Password Generator</p>
+        
+        <!-- Options for customizing password -->
+        <div class="options">
+            <label>
+                <input type="checkbox" id="useNumbers" checked>
+                Include Numbers
+            </label>
+            <label>
+                <input type="checkbox" id="useSymbols" checked>
+                Include Symbols
+            </label>
+        </div>
+        
+        <!-- Generate button -->
+        <div id="genBtnDiv">
+            <button class="generateBtnClass" id="generateBtn">Generate Passwords</button>
+        </div>
+        
+        <!-- Display generated passwords -->
+        <div id="passwords" style="padding-top: 20px;">
+            <div class="password-box">
+                <span class="password" id="password1"></span>
+                <button class="copy-btn" data-target="password1">Copy</button>
+            </div>
+            <div class="password-box">
+                <span class="password" id="password2"></span>
+                <button class="copy-btn" data-target="password2">Copy</button>
+            </div>
+            <div class="password-box">
+                <span class="password" id="password3"></span>
+                <button class="copy-btn" data-target="password3">Copy</button>
+            </div>
+        </div>        
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
